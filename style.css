@@ -1,0 +1,42 @@
+.boxes {
+  display: grid;
+  grid-template-columns: repeat(25, 1fr);
+  grid-gap: 4px;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  transition: transform 0.8s, border-radius 0.4s ease-in-out;
+}
+
+.box:hover {
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 2px 2px 10px goldenrod, -2px -2px 10px goldenrod;
+  transform: rotate(360deg) scale(2.5, 2.5);
+}
+
+.pop {
+  display: hidden;
+  color: transparent;
+}
+
+.black {
+  background-color: black;
+  box-shadow: 2px 4px 5px #666;
+}
+
+.white {
+  background-color: white;
+  color: black;
+  box-shadow: 2px 4px 5px #666;
+  border: 1px solid #999;
+}
